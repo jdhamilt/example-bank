@@ -20,8 +20,8 @@
             </div>
             <div class="about">A SIMULATED, INTERACTIVE MOBILE PHONE
                 APP COMMUNICATING WITH JEE MICROPROFILE
-                MICROSERVICES RUNNING ON AN IBM CLOUD
-                OPENSHIFT 4 INSTANCE.
+                MICROSERVICES RUNNING ON AN
+                OPENSHIFT 4.6 INSTANCE.
             </div>
             <asset-element link="https://developer.ibm.com/articles/intro-to-openshift-4/" assetimage="./images/lightbulb.svg" text="Background"></asset-element>
             <asset-element link="https://github.com/IBM/loyalty#architecture" assetimage="./images/cloud.svg" text="Cloud Architecture"></asset-element>
@@ -35,20 +35,20 @@
             </asset-element>
             <!-- asset-element assetimage="./images/admin.svg" text="Admin view"></asset-element> -->
         </div>
-        <phone-element id="phoneview"></phone-element>      
+        <phone-element id="phoneview"></phone-element>
         <script>
             var supportTest = 'customElements' in window;
             console.log('supports web components = ' + supportTest);
             if(supportTest == false){
                 window.alert('If you see this alert, it means this example is not compatible with your browser. This example uses Web Components - a technology supported in the latest versions of Firefox, Chrome and Safari. Please update your browser to the latest release.');
             }
-        </script>      
+        </script>
         </div>
     </div>
 </body>
 
 <template id="phone">
-    <style>   
+    <style>
     .frame {
     height: 100%;
     width: 300px;
@@ -60,7 +60,7 @@
     box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
     /* border-radius: 20px;
     background: #FFFFFF;
-    box-shadow:  31px 31px 71px #7d7d7d, 
+    box-shadow:  31px 31px 71px #7d7d7d,
                  -31px -31px 71px #ffffff; */
     }
 
@@ -136,7 +136,7 @@
     outline:none;
 }
     </style>
-   
+
     <div class="frame">
         <div class="sensors">
             <div class="sensor"></div>
@@ -155,7 +155,7 @@
 </template>
 
 <template id="tile">
-    <style>  
+    <style>
     .tile{
         height: 100px;
         width: 100px;
@@ -187,7 +187,7 @@
 </template>
 
 <template id="homescreen">
-    <style>  
+    <style>
 
     .homescreen{
 
@@ -234,7 +234,7 @@
         <div id="APPTILES" class="apptiles">
             <tile-element tileimage="./images/bank.svg" tiletext="bank"></tile-element>
             <tile-element tileimage="./images/rideshare.svg" tiletext="ride" base=10 ceiling=30></tile-element>
-            <tile-element tileimage="./images/cafe.svg" tiletext="cafe" base=5 ceiling=20></tile-element>  
+            <tile-element tileimage="./images/cafe.svg" tiletext="cafe" base=5 ceiling=20></tile-element>
             <tile-element tileimage="./images/groceries.svg" tiletext="groceries" base=15 ceiling=200></tile-element>
             <tile-element tileimage="./images/restaurant.svg" tiletext="delivery" base=20 ceiling=60></tile-element>
             <tile-element tileimage="./images/fuel.svg" tiletext="fuel" base=30 ceiling=100></tile-element>
@@ -675,7 +675,7 @@
     </style>
 
     <div class="accountview">
-       
+
         <div class="account">
             <div class="viewtitle">ACCOUNT</div>
             <div class="accountdetails">
